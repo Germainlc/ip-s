@@ -97,8 +97,8 @@
  
 	return xhr;
 }
-var xhr = getXMLHttpRequest();
-xhr.open("GET", "traitement.php?variable1=" + getIPs(), true);
-xhr.send(null);
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'traitement.php?variable1=' + getIPs());
+xhr.send();
 </script>
 </body></html>
